@@ -133,6 +133,57 @@ main {
     color:black;
 }
 
+/* styling reasons*/
+#reasons {
+    padding: 0 20px; 
+    padding-bottom: 20px; 
+}
+
+/* Style the h2 in the reasons section */
+#reasons h2 {
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-size: 24px; 
+}
+
+/* Adding line height and bottom margin to divs inside benefits */
+#benefits-financial div,
+#benefits-friends div {
+    margin-bottom: 20px; 
+    line-height: 1.5; 
+}
+
+/* Style paragraphs in the benefits div */
+#benefits p {
+    padding: 0 20px; 
+}
+
+/* Style  hr under the headings */
+#benefits-financial hr,
+#benefits-friends hr {
+    border-color: #000; /* Border color */
+    border-width: 1px; /* Border width */
+    margin: 5px 0; /* Margin top and bottom of 5px */
+}
+
+#circle-cover-bg{
+    background: url("../images/Watching.jpg");
+    height:900vw;
+    width:900vw;
+    margin-bottom:20px;
+    border-radius:50%;
+    max-width:300px;
+    max-height:300px;
+
+}
+
+#benefits-image{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
 /*media query for tablets and larger (768px and up)*/
 @media screen and (min-width:768px){
     /*Header*/
