@@ -46,6 +46,11 @@ h2, h3 {
     margin: 5px 0;
 }
 
+#background p {
+    margin-bottom: 30px; /* Adjusted margin for better spacing */
+    font-size: 16px; /* Adjusted font size for mobile */
+}
+
 /* Header */
 header {
     background-color: white;
@@ -252,14 +257,8 @@ main {
     background-image: url('../images/hero-woman.jpeg'); /* Add path to your symptoms background image */
 }
 
-#background p {
-    margin-bottom: 30px; /* Adjust margin for better spacing */
-    font-size: 16px; /* Adjust font size for mobile */
 
-}
-
-
-/* Resources page */
+/* Links page list style*/
  dl {
   display: flex;
   grid-gap: 4px 16px;
@@ -280,25 +279,25 @@ dt {
   grid-column-start: 2;
 }
 
-/* Resource links */
+/* Resource links on link page */
 dl dt,
 dl dt {
-    color: #fff; /* Set the initial color to white */
+    color: #fff; 
     text-decoration:none !important; /* this should take away the underline, but it isnt't?*/
-    transition: color 0.3s; /* Add a smooth color transition effect */
+    transition: color 0.3s; 
 }
 
  dl dt:hover,
  dl dt:hover {
     color:rgb(255,105,180);
     text-shadow: 2px 2px rgb(0,128,128);
-
+    
 }
 
 
 .resource iframe {
     width: inherit;
-    height: inherit; /* Adjust height as needed */
+    height: inherit;
     border-radius: 10px;
     align-items:initial;
 }
@@ -369,7 +368,7 @@ dl dt {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-   
+    /* Header */
     nav {
         display: block;
         position: relative;
@@ -444,8 +443,8 @@ dl dt {
     }
 
     .join-button:hover {
-        background-color: #fafafa;
-        color: #454b1b;
+        color:rgb(255,105,180);
+        text-shadow: 2px 2px rgb(0,128,128);
     }
 }
 
@@ -455,17 +454,12 @@ dl dt {
         border-bottom: 1px solid #3a3a3a;
     }
 
-    /* Styling list tags for other websites and media resources */
-
     /* Media Resources section */
     #MediaResources {
         text-align: center;
     }
 
-    /* Adjust layout for larger screens */
-    @media screen and (min-width: 992px) {
-    #OtherWebsites dl,
-    #MediaResources dl {
+        dl, dl {
         display: grid;
         grid-gap: 4px 16px;
         grid-template-columns: max-content;
@@ -476,9 +470,9 @@ dl dt {
         grid-column-start: 2;
         text-align: left;
     }
-    }
+    
 
-    /* Media Resources section */
+    /* Video section */
     #VideoResources {
     text-align: center;
     }
@@ -491,7 +485,7 @@ dl dt {
     
     .resource {
         margin: 5px;
-        width: calc(50% - 20px); /* Adjust as needed */
+        width: calc(50% - 20px); /* takes up width based on ratio */
         text-align: center; /* Center the title */
         justify-content: flex-start;
     }
@@ -507,10 +501,9 @@ dl dt {
         font-size: 18px;
         color: teal;
     }
+}
 
-
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
     @media screen and (min-width: 1200px) {
         /* Reasons section */
         #benefits {
@@ -538,4 +531,4 @@ dl dt {
             align-self: flex-end;
         }
     }
-}
+
