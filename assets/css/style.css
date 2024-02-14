@@ -34,7 +34,17 @@ h2, h3 {
     margin-bottom: 10px; /* Adjust margin */
 }
 
+#background {
+    background-color: rgb(105, 105, 105, 0.9);
+    left: 10%;
+    top: 150px;
+    border-bottom: 1px solid #fff;
+}
 
+#background hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
 
 /* Header */
 header {
@@ -170,6 +180,7 @@ main {
 
 /* Meetup Times section */
 #times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +191,7 @@ main {
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
-    /* Will not wrap on screens of less than 400px wide.
+    /* This will not wrap on screens of less than 400px wide.
     Each div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
@@ -193,6 +204,104 @@ main {
     color: #fafafa;
 }
 
+
+/* Parallax sections in About PCOS and Resources Page */
+#Overview,
+#Symptoms,
+#Implications,
+#Management,
+#MediaResources,
+#OtherWebsites {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Adjust text color as needed */
+    padding: 80px 20px; /* Adjust padding for mobile */
+    text-align: center;
+    margin-bottom: 30px; /* Adjust margin for better spacing */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+    border-bottom: 1px solid #fff;
+}
+
+
+#Overview {
+    background-image: url('../images/ribbon.webp'); /* Add path to your management background image */
+}
+
+#Symptoms {
+    background-image: url('../images/Symptoms.jpg'); /* Add path to your management background image */
+}
+
+#Implications {
+    background-image: url('../images/implecations.webp'); /* Add path to your implications background image */
+}
+
+#Management {
+    background-image: url('../images/management.jpg'); /* Add path to your management background image */
+}
+
+#MediaResources {
+    background-image: url('../images/happy-uterus.jpg'); /* Add path to your overview background image */
+}
+
+#OtherWebsites {
+    background-image: url('../images/hero-woman.jpeg'); /* Add path to your symptoms background image */
+}
+
+#background p {
+    margin-bottom: 30px; /* Adjust margin for better spacing */
+    font-size: 16px; /* Adjust font size for mobile */
+
+}
+
+
+/* Resources page */
+ dl {
+  display: flex;
+  grid-gap: 4px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+dt {
+    font-size: 1.2em; 
+    margin:20px;
+    padding-left: 10px;
+}
+
+ dd{
+  margin:20px 10px;
+  grid-column-start: 2;
+}
+
+/* Resource links */
+dl dt,
+dl dt {
+    color: #fff; /* Set the initial color to white */
+    text-decoration:none !important; /* this should take away the underline, but it isnt't?*/
+    transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+ dl dt:hover,
+ dl dt:hover {
+    color:rgb(255,105,180);
+    text-shadow: 2px 2px rgb(0,128,128);
+
+}
+
+
+.resource iframe {
+    width: inherit;
+    height: inherit; /* Adjust height as needed */
+    border-radius: 10px;
+    align-items:initial;
+}
 
 
 /* Form */
@@ -260,14 +369,13 @@ main {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-   /*Header*/
+   
     nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-        justify-content: space-evenly;
     }
 
     #menu {
@@ -345,6 +453,59 @@ main {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Styling list tags for other websites and media resources */
+
+    /* Media Resources section */
+    #MediaResources {
+        text-align: center;
+    }
+
+    /* Adjust layout for larger screens */
+    @media screen and (min-width: 992px) {
+    #OtherWebsites dl,
+    #MediaResources dl {
+        display: grid;
+        grid-gap: 4px 16px;
+        grid-template-columns: max-content;
+    }
+
+    dd {
+        margin: 20px;
+        grid-column-start: 2;
+        text-align: left;
+    }
+    }
+
+    /* Media Resources section */
+    #VideoResources {
+    text-align: center;
+    }
+ 
+    .resource-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .resource {
+        margin: 5px;
+        width: calc(50% - 20px); /* Adjust as needed */
+        text-align: center; /* Center the title */
+        justify-content: flex-start;
+    }
+    
+    .resource iframe {
+        width: 100%; /* Adjust to occupy full width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+    
+    .resource h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        color: teal;
     }
 
 
