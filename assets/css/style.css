@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -55,7 +54,7 @@ h2, h3 {
     color:#3a3a3a;
 }
 
-/* Header */
+/*All Pages - Header */
 header {
     background-color: white;
     padding: 0 1rem;
@@ -112,24 +111,25 @@ nav {
     font-size: 2rem;
 }
 
-/* Main content */
+/* All Pages- Main content */
 main {
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
-    /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 47px;
-    /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
 }
 
+/* Elements Specific To Pages Below Except Footer*/
+
+/*Home Page- Hero Image*/
 #hero {
     position: relative;
-    height: 600px; /* Adjust the height as needed */
+    height: 600px; 
     background-image: url("../images/hero-woman.jpeg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* This creates the parallax effect */
+    background-attachment: fixed; 
 }
 
 #cover-text {
@@ -142,7 +142,7 @@ main {
     text-align:center;
 }
 
-/* Reasons section on Home Page */
+/*Home Page- Benefits section */
 #reasons {
     width: 90%;
     margin: 20px auto;
@@ -170,6 +170,7 @@ main {
     margin: 5px 0;
 }
 
+/* Home Page- Sad Uterus Mascot Image*/
 #cover-bg {
     background: url('../images/saduterus.png') no-repeat top center / cover;
     height: 90vw;
@@ -187,7 +188,7 @@ main {
 }
 
 
-/* Meetup Times section */
+/* Home Page- Times section */
 #times {
     /* Handles responsivity without the need for a media query */
     display: flex;
@@ -200,20 +201,18 @@ main {
     padding: 15px;
     text-align: center;
     /* This will not wrap on screens of less than 400px wide.
-    Each div will expand to fill the available space on its row */
+    Each div will expand to fill the available space*/
     flex-basis: 200px;
     flex-grow: 1;
-    /* Creates a grid of meetup time dives over the background image */
     border: 2px solid white;
 }
 
 #times h3 {
-    /* Override the heading colour set in general styles */
     color: #fafafa;
 }
 
 
-/* Parallax sections in About PCOS and Resources Page */
+/* PCOS and Links Page - Parallax sections*/
 #Overview,
 #Symptoms,
 #Implications,
@@ -223,10 +222,10 @@ main {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    color:#3a3a3a; /* Adjust text color as needed */
-    padding: 80px 20px; /* Adjust padding for mobile */
+    color:#3a3a3a;
+    padding: 80px 20px; 
     text-align: center;
-    margin-bottom: 30px; /* Adjust margin for better spacing */
+    margin-bottom: 30px; 
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -235,33 +234,34 @@ main {
     border-bottom: 1px solid #fff;
 }
 
+/* PCOS and Links Page - Parallax section images*/
 
 #Overview {
-    background-image: url('../images/ribbon-min.png'); /* Add path to your management background image */
+    background-image: url('../images/ribbon-min.png'); 
 }
 
 #Symptoms {
-    background-image: url('../images/symptoms-min.png'); /* Add path to your management background image */
+    background-image: url('../images/symptoms-min.png'); 
 }
 
 #Implications {
-    background-image: url('../images/implications-min.png'); /* Add path to your implications background image */
+    background-image: url('../images/implications-min.png');
 }
 
 #Management {
-    background-image: url('../images/management-min.png'); /* Add path to your management background image */
+    background-image: url('../images/management-min.png'); 
 }
 
 #MediaResources {
-    background-image: url('../images/podcast-min.png'); /* Add path to your overview background image */
+    background-image: url('../images/podcast-min.png'); 
 }
 
 #OtherWebsites {
-    background-image: url('../images/Links-min.png'); /* Add path to your symptoms background image */
+    background-image: url('../images/Links-min.png'); 
 }
 
 
-/* Links page list style*/
+/* Links page-list style*/
  dl {
   display: flex;
   grid-gap: 4px 16px;
@@ -282,7 +282,7 @@ dt {
   grid-column-start: 2;
 }
 
-/* Resource links on link page */
+/* Link Page- List style hover */
 dl dt,
 dl dt {
     color:teal; 
@@ -297,7 +297,7 @@ dl dt {
     
 }
 
-
+/*Link Page - Watches Of The Week*/
 .resource iframe {
     width: inherit;
     height: inherit;
@@ -306,7 +306,7 @@ dl dt {
 }
 
 
-/* Form */
+/* Sign-Up Page*/
 #signup {
     background-image: url("../images/signuppg.png");
     background-size: cover;
@@ -354,21 +354,6 @@ dl dt {
     color: #fafafa;
 }
 
-/* Footer */
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-}
-
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
@@ -398,19 +383,19 @@ dl dt {
         margin: 0 0.5rem;
     }
 
-    /* Main content */
+    /* All Pages -Main content */
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
 
-    /* Hero */
+    /*Home Page- Hero */
     #cover-text {
         width: 300px;
         right: 50px;
     }
 
-    /* Reasons section */
+    /* Home Page - Benefits section */
     #benefits-physical,
     #benefits-mental {
         display: flex;
@@ -428,7 +413,7 @@ dl dt {
         align-self: flex-end;
     }
 
-    /* Form */
+    /* Sign-Up -Form */
     #signup {
         background-position: center;
         position: relative;
@@ -451,13 +436,28 @@ dl dt {
     }
 }
 
+/* All Pages- Footer*/
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 
-    /* Media Resources section */
+    /* Links Page - Links section */
     #MediaResources {
         text-align: center;
     }
@@ -474,7 +474,7 @@ dl dt {
         text-align: left;
     }
     
-    /* Video section */
+    /* Links Page - Watches Of The Week */
     #VideoResources {
     text-align: center;
     }
@@ -487,14 +487,14 @@ dl dt {
     
     .resource {
         margin: 5px;
-        width: calc(50% - 20px); /* takes up width based on ratio */
-        text-align: center; /* Center the title */
+        width: calc(50% - 20px); 
+        text-align: center; 
         justify-content: flex-start;
     }
     
     .resource iframe {
-        width: 100%; /* Adjust to occupy full width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
         border-radius: 10px;
     }
     
@@ -505,9 +505,11 @@ dl dt {
     }
 }
 
+
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media screen and (min-width: 1200px) {
-        /* Reasons section */
+        /* RHome Page - Benefits section */
         #benefits {
             display: flex;
             flex-direction: row;
