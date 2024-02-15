@@ -210,52 +210,50 @@ main {
 }
 
 
-/* Parallax sections in About PCOS and Resources Page */
-#Overview,
-#Symptoms,
-#Implications,
-#Management,
-#MediaResources,
-#OtherWebsites {
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    color: #fff; /* Adjust text color as needed */
-    padding: 80px 20px; /* Adjust padding for mobile */
-    text-align: center;
-    margin-bottom: 30px; /* Adjust margin for better spacing */
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:inherit;
-    border-bottom: 1px solid #fff;
+/* photo and read sections on links page- GRID*/
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "OW I1"
+    "I2 ML"
+    "vid1 vid2";
 }
 
-
-#Overview {
-    background-image: url('../images/ribbon.webp'); /* Add path to your management background image */
+.OW {
+grid-area: "OW";
 }
 
-#Symptoms {
-    background-image: url('../images/Symptoms.jpg'); /* Add path to your management background image */
+.I1 {
+    grid-area: "I1";
+    background-image: url('../images/hero-woman.jpeg');
+    height:auto;
+    width:auto;
 }
 
-#Implications {
-    background-image: url('../images/implecations.webp'); /* Add path to your implications background image */
+.I2 {
+    grid-area: "I2";
+}
+.ML {
+    grid-area: "ML";
 }
 
-#Management {
-    background-image: url('../images/management.jpg'); /* Add path to your management background image */
+.vid1 {
+    grid-area: "vid1";
 }
 
-#MediaResources {
-    background-image: url('../images/happy-uterus.jpg'); /* Add path to your overview background image */
+.vid2 {
+    grid-area: "vid2";
 }
 
-#OtherWebsites {
-    background-image: url('../images/hero-woman.jpeg'); /* Add path to your symptoms background image */
+.grid div:nth-child(even){
+    background-color: red;
 }
+.grid div:nth-child(odd){
+    background-color: blue;
+}
+
 
 
 /* Links page list style*/
@@ -279,7 +277,6 @@ dt {
   grid-column-start: 2;
 }
 
-/* Resource links on link page */
 dl dt,
 dl dt {
     color: #fff; 
@@ -446,7 +443,34 @@ dl dt {
         color:rgb(255,105,180);
         text-shadow: 2px 2px rgb(0,128,128);
     }
+/******/
+#OtherWebsites .container,
+#MediaResources .container {
+    flex-direction: row;
 }
+
+#OtherWebsites .content-container,
+#MediaResources .content-container {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+#OtherWebsites .image-container,
+#MediaResources .image-container {
+    flex: 1;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+#OtherWebsites .content-container h3,
+#MediaResources .content-container h2 {
+    margin-bottom: 10px;
+}
+}
+   
+
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -471,6 +495,20 @@ dl dt {
         text-align: left;
     }
     
+    #OtherWebsites .container {
+        background-image: url('../images/ribbon.webp'); /* Background image for OtherWebsites */
+        background-position: right;
+    }
+
+    #MediaResources, #OtherWebsites .content-container {
+        max-width: 50%; /* Adjust width of the content container for larger screens */
+    }
+
+    #MediaResources .container {
+        background-image: url('../images/hero-woman.jpeg'); /* Background image for MediaResources */
+        background-position: left; /* Align the background image to the right */
+    }
+
 
     /* Video section */
     #VideoResources {
@@ -501,6 +539,7 @@ dl dt {
         font-size: 18px;
         color: teal;
     }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
