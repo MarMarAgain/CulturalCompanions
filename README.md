@@ -1,4 +1,5 @@
 # PP1 project - PCOS Cysters
+![Photo of landing page of PCOS CYSTERS Website. PCOS Cysters is in the left tophand corner in teal. The main image is of a silhouetted woman with her fist raised. On tope of the image pink writing says "Cysters doing it for themselves". There is also a navigation section in the top right hand corner](assets/images/ReadMe-Hero.png)
 
 ## PCOS CYSTERS is a site aimed to be a first resource for those living with Polycystic Ovary Syndrome.
 
