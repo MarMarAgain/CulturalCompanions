@@ -303,7 +303,7 @@ dl dt {
     height: inherit;
     border-radius: 10px;
     align-items:initial;
-    order: none;
+    border: none;
 }
 
 
