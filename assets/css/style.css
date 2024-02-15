@@ -35,20 +35,24 @@ h2, h3 {
 }
 
 #background {
-    background-color: rgb(105, 105, 105, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     left: 10%;
     top: 150px;
-    border-bottom: 1px solid #fff;
+    justify-content: center;
+    max-width: 900px;
 }
 
 #background hr {
-    border-top: 1px solid #3a3a3a;
+    border-top: 1px solid white;
     margin: 5px 0;
 }
 
 #background p {
     margin-bottom: 30px; /* Adjusted margin for better spacing */
     font-size: 16px; /* Adjusted font size for mobile */
+    text-align: left;
+    padding: 0 0 15px 15px;
+    color:#3a3a3a;
 }
 
 /* Header */
@@ -167,14 +171,13 @@ main {
 }
 
 #circle-cover-bg {
-    background: url('../images/happy-uterus.jpg') no-repeat top center / cover;
+    background: url('../images/saduterus.png') no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
-    /* Makes the square image into a circle */
-    border-radius: 50%;
-    max-width: 300px;
+    max-width: 350px;
     max-height: 300px;
+    padding-right: 10px;
 }
 
 #benefits-image {
@@ -185,7 +188,6 @@ main {
 
 /* Meetup Times section */
 #times {
-    background: url('../images/dublin-city.webp') no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
@@ -210,50 +212,52 @@ main {
 }
 
 
-/* photo and read sections on links page- GRID*/
-.grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "OW I1"
-    "I2 ML"
-    "vid1 vid2";
+/* Parallax sections in About PCOS and Resources Page */
+#Overview,
+#Symptoms,
+#Implications,
+#Management,
+#MediaResources,
+#OtherWebsites {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color:#3a3a3a; /* Adjust text color as needed */
+    padding: 80px 20px; /* Adjust padding for mobile */
+    text-align: center;
+    margin-bottom: 30px; /* Adjust margin for better spacing */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+    border-bottom: 1px solid #fff;
 }
 
-.OW {
-grid-area: "OW";
+
+#Overview {
+    background-image: url('../images/ribbon.png'); /* Add path to your management background image */
 }
 
-.I1 {
-    grid-area: "I1";
-    background-image: url('../images/hero-woman.jpeg');
-    height:auto;
-    width:auto;
+#Symptoms {
+    background-image: url('../images/symptoms.png'); /* Add path to your management background image */
 }
 
-.I2 {
-    grid-area: "I2";
-}
-.ML {
-    grid-area: "ML";
+#Implications {
+    background-image: url('../images/implecations.webp'); /* Add path to your implications background image */
 }
 
-.vid1 {
-    grid-area: "vid1";
+#Management {
+    background-image: url('../images/management.png'); /* Add path to your management background image */
 }
 
-.vid2 {
-    grid-area: "vid2";
+#MediaResources {
+    background-image: url('../images/podcast.png'); /* Add path to your overview background image */
 }
 
-.grid div:nth-child(even){
-    background-color: red;
+#OtherWebsites {
+    background-image: url('../images/Links.png'); /* Add path to your symptoms background image */
 }
-.grid div:nth-child(odd){
-    background-color: blue;
-}
-
 
 
 /* Links page list style*/
@@ -277,9 +281,10 @@ dt {
   grid-column-start: 2;
 }
 
+/* Resource links on link page */
 dl dt,
 dl dt {
-    color: #fff; 
+    color:teal; 
     text-decoration:none !important; /* this should take away the underline, but it isnt't?*/
     transition: color 0.3s; 
 }
@@ -302,7 +307,7 @@ dl dt {
 
 /* Form */
 #signup {
-    background-image: url("../images/happy-uterus.jpg");
+    background-image: url("../images/signuppg.png");
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
@@ -443,34 +448,7 @@ dl dt {
         color:rgb(255,105,180);
         text-shadow: 2px 2px rgb(0,128,128);
     }
-/******/
-#OtherWebsites .container,
-#MediaResources .container {
-    flex-direction: row;
 }
-
-#OtherWebsites .content-container,
-#MediaResources .content-container {
-    flex: 1;
-    padding: 0 20px;
-    text-align: left;
-}
-
-#OtherWebsites .image-container,
-#MediaResources .image-container {
-    flex: 1;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-}
-
-#OtherWebsites .content-container h3,
-#MediaResources .content-container h2 {
-    margin-bottom: 10px;
-}
-}
-   
-
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -495,21 +473,6 @@ dl dt {
         text-align: left;
     }
     
-    #OtherWebsites .container {
-        background-image: url('../images/ribbon.webp'); /* Background image for OtherWebsites */
-        background-position: right;
-    }
-
-    #MediaResources, #OtherWebsites .content-container {
-        max-width: 50%; /* Adjust width of the content container for larger screens */
-    }
-
-    #MediaResources .container {
-        background-image: url('../images/hero-woman.jpeg'); /* Background image for MediaResources */
-        background-position: left; /* Align the background image to the right */
-    }
-
-
     /* Video section */
     #VideoResources {
     text-align: center;
@@ -539,7 +502,6 @@ dl dt {
         font-size: 18px;
         color: teal;
     }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -570,4 +532,3 @@ dl dt {
             align-self: flex-end;
         }
     }
-
