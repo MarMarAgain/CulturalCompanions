@@ -44,6 +44,7 @@ This is a basic sign-up page that shows a mascot encouraging the user to join. T
 
 
 ## Content
+Information regarding PCOS was compiled from the following sources: Mayo Clinic, WebMD, the American College of Obstetricians and Gynecologists (ACOG), and the National Institutes of Health (NIH).
 
 ## Images 
 * Implications-min.png, management-min.png, ribbon-min.png, hero-woman.png, symptoms-min.png - Adobe Stock Images. 
