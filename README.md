@@ -1,5 +1,5 @@
 # PP1 project - PCOS Cysters
-![Photo of landing page of PCOS CYSTERS Website. PCOS Cysters is in the left tophand corner in teal. The main image is of a silhouetted woman with her fist raised. On tope of the image pink writing says "Cysters doing it for themselves". There is also a navigation section in the top right hand corner](assets/images/ReadMe-Hero.png)
+![Photo of landing page of PCOS CYSTERS Website. PCOS Cysters is in the left tophand corner in teal. The main image is of a silhouetted woman with her fist raised. On tope of the image pink writing says "Cysters doing it for themselves". There is also a navigation section in the top right hand corner](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/a6eb6c79-cd03-46fb-a2e9-fa5c07445ee7)
 
 ## PCOS CYSTERS is a site aimed to be a first resource for those living with Polycystic Ovary Syndrome.
 
@@ -22,6 +22,8 @@ This quickly shows the user what is currently on offer if they choose to engage.
 * Footer
 The Footer links to the websites socials for further engagement.
 
+![Screenshot of the page 'PCOS' on the site PCOS CYSTERS. Image shows general layout. Layout consist of a title in pink with structured paragraphs underneath. This is against a section of white which is itself set against an image of a ribbon. The image of the ribbon has a teal overlay](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/f4cf754f-d765-4c29-9ceb-0d04790bdc61)
+
 * PCOS Page
 This page gives an overview of the condition. Its short and easy to understand. It's seperated with  parallax sections for clear understanding and a smoother user journey. 
 
@@ -29,7 +31,8 @@ This page gives an overview of the condition. Its short and easy to understand. 
 The Links page is seperated into two parts. The first is links to other websites with a very short description on their individual focus. These links are action orientated ie. if the user wants to ask further questions, get an ebook, understand information about a certain aspect of PCOS ect. The sceond part is learning orientated. This is a list of podcasts twith short descriptions on their general focus. At the bottom, we have "watches of the week" two insightful videos that are easily accessible and cyster approved. All links are clickable and change apon hover/ clicking. All links open onto a new window for that link.
 
 * Sign-Up Page
-This is a basic sign-up page that shows a mascot encouraging the user to join. The user is asked to enter their full name and email address. 
+This is a basic sign-up page that shows a mascot encouraging the user to join. The user is asked to enter their full name and email address.
+![Image shows the Sign-up page on the PCOS CYSTERS website. The signup section is teal and set against a pink background. There is also a cartoon mascot of a happy uterus waving.](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/0cd34f46-cabb-4245-aa03-bf3a9510d685)
 
 ## Features that could be developed
 
