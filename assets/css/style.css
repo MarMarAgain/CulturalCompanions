@@ -170,7 +170,7 @@ main {
     margin: 5px 0;
 }
 
-#circle-cover-bg {
+#cover-bg {
     background: url('../images/saduterus.png') no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
@@ -185,6 +185,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 
 /* Meetup Times section */
 #times {
@@ -236,27 +237,27 @@ main {
 
 
 #Overview {
-    background-image: url('../images/ribbon.png'); /* Add path to your management background image */
+    background-image: url('../images/ribbon-min.png'); /* Add path to your management background image */
 }
 
 #Symptoms {
-    background-image: url('../images/symptoms.png'); /* Add path to your management background image */
+    background-image: url('../images/symptoms-min.png'); /* Add path to your management background image */
 }
 
 #Implications {
-    background-image: url('../images/implecations.webp'); /* Add path to your implications background image */
+    background-image: url('../images/implications-min.png'); /* Add path to your implications background image */
 }
 
 #Management {
-    background-image: url('../images/management.png'); /* Add path to your management background image */
+    background-image: url('../images/management-min.png'); /* Add path to your management background image */
 }
 
 #MediaResources {
-    background-image: url('../images/podcast.png'); /* Add path to your overview background image */
+    background-image: url('../images/podcast-min.png'); /* Add path to your overview background image */
 }
 
 #OtherWebsites {
-    background-image: url('../images/Links.png'); /* Add path to your symptoms background image */
+    background-image: url('../images/Links-min.png'); /* Add path to your symptoms background image */
 }
 
 
