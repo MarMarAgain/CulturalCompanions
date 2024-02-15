@@ -126,7 +126,7 @@ main {
 #hero {
     position: relative;
     height: 600px; 
-    background-image: url("../images/hero-woman.jpeg");
+    background-image: url("../images/hero-woman-min.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
