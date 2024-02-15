@@ -33,7 +33,7 @@ h2, h3 {
     margin-bottom: 10px; /* Adjust margin */
 }
 
-#background {
+.background {
     background-color: rgba(255, 255, 255, 0.9);
     left: 10%;
     top: 150px;
@@ -41,12 +41,12 @@ h2, h3 {
     max-width: 900px;
 }
 
-#background hr {
+.background hr {
     border-top: 1px solid white;
     margin: 5px 0;
 }
 
-#background p {
+.background p {
     margin-bottom: 30px; /* Adjusted margin for better spacing */
     font-size: 16px; /* Adjusted font size for mobile */
     text-align: left;
@@ -303,6 +303,7 @@ dl dt {
     height: inherit;
     border-radius: 10px;
     align-items:initial;
+    order: none;
 }
 
 
