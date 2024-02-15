@@ -1,9 +1,9 @@
 # PP1 project - PCOS Cysters
-![Photo of landing page of PCOS CYSTERS Website. PCOS Cysters is in the left tophand corner in teal. The main image is of a silhouetted woman with her fist raised. On tope of the image pink writing says "Cysters doing it for themselves". There is also a navigation section in the top right hand corner](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/a6eb6c79-cd03-46fb-a2e9-fa5c07445ee7)
+![Photo of landing page of PCOS CYSTERS Website. PCOS Cysters is in the left top hand corner in teal. The main image is of a silhouetted woman with her fist raised. On top of the image pink writing states "Cysters doing it for themselves". There is also a navigation section in the top right hand corner](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/a6eb6c79-cd03-46fb-a2e9-fa5c07445ee7)
 
 ## PCOS CYSTERS is a site aimed to be a first resource for those living with Polycystic Ovary Syndrome.
 
-This website serves as a user-friendly resource hub for individuals newly diagnosed or living with PCOS. The aim is to simplify complex information, ensuring easy comprehension for all users to assess their needs efficiently. Recognizing the variability of symptoms and experiences, I consolidated information from diverse sources into a single platform, providing clear insights into each resource's focus. My approach prioritizes accessibility, guiding visitors to accurate information in a friendly, casual tone, particularly beneficial amidst the often daunting medical literature surrounding PCOS.
+This website serves as a user-friendly resource hub for individuals newly diagnosed or living with Poly Cystic Ovary Syndrome (PCOS). The aim is to simplify complex information, ensuring easy comprehension for all users to assess their needs efficiently. Recognizing the variability of symptoms and experiences, I consolidated information from diverse sources into a single platform, providing clear insights into each resource's focus. My approach prioritizes accessibility, guiding visitors to accurate information in a friendly, casual tone, which I hope to be particularly beneficial amidst the often daunting medical literature surrounding PCOS.
 
 ## Features
 
@@ -17,18 +17,20 @@ The tone of the image and title conveys the website. "Cysters" is a coloqial ter
 This is intended to give the user a quick insight into the scope of the website and what they can gain from it.
 
 * Landing Page-Upcoming events
-This quickly shows the user what is currently on offer if they choose to engage.
+This quickly shows the user what is currently on offer if they choose to engage. There is also an image of a mascot uterus to lighten the overall tone of the section.
+
+![The screenshot shows both thebenefits section and the upcoming events section. It also shows a pink battered cartoon uterus holding a sign reading 'Help' ](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/c810ec6f-f478-4059-8ef5-2a24de1de6b7)
 
 * Footer
 The Footer links to the websites socials for further engagement.
 
-![Screenshot of the page 'PCOS' on the site PCOS CYSTERS. Image shows general layout. Layout consist of a title in pink with structured paragraphs underneath. This is against a section of white which is itself set against an image of a ribbon. The image of the ribbon has a teal overlay](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/f4cf754f-d765-4c29-9ceb-0d04790bdc61)
+![Screenshot of the page 'PCOS' on the site PCOS CYSTERS. Image shows the general layout. Layout consist of a title in pink with structured paragraphs underneath. This is against a section of white which is itself set against an image of a ribbon. The image of the ribbon has a teal overlay](https://github.com/MarMarAgain/CulturalCompanions/assets/158588349/f4cf754f-d765-4c29-9ceb-0d04790bdc61)
 
 * PCOS Page
-This page gives an overview of the condition. Its short and easy to understand. It's seperated with  parallax sections for clear understanding and a smoother user journey. 
+This page gives an overview of the condition. Its short and easy to understand with little distraction. It's seperated with  parallax sections for clear understanding and a smoother user journey. 
 
 * Links Page
-The Links page is seperated into two parts. The first is links to other websites with a very short description on their individual focus. These links are action orientated ie. if the user wants to ask further questions, get an ebook, understand information about a certain aspect of PCOS ect. The sceond part is learning orientated. This is a list of podcasts twith short descriptions on their general focus. At the bottom, we have "watches of the week" two insightful videos that are easily accessible and cyster approved. All links are clickable and change apon hover/ clicking. All links open onto a new window for that link.
+The Links page is seperated into two parts. The first is links to other websites with a very short description on their individual focus. These links are action orientated -ie. if the user wants to ask further questions, get an ebook, understand information about a certain aspect of PCOS ect. The sceond part is learning orientated. This is a list of podcasts twith short descriptions on their general focus. At the bottom, we have "watches of the week" two insightful videos that are easily accessible and cyster approved. All links are clickable and change apon hover/ clicking. All links open onto a new window for that link.
 
 * Sign-Up Page
 This is a basic sign-up page that shows a mascot encouraging the user to join. The user is asked to enter their full name and email address.
@@ -37,7 +39,26 @@ This is a basic sign-up page that shows a mascot encouraging the user to join. T
 ## Features that could be developed
 
 ## Testing 
-
+* HTML and CSS files Passed V3C validator 
+* CSS validate by Jigsaw
+Valid CSS!
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+            
+Valid CSS!
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+     
 
 ## Credits
 

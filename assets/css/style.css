@@ -155,8 +155,8 @@ main {
     color: teal;
 }
 
-#benefits-physical > div,
-#benefits-mental > div {
+#benefits-1 > div,
+#benefits-2 > div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -188,7 +188,7 @@ main {
 }
 
 
-/* Home Page- Times section */
+/* Home Page- Upcoming events section */
 #times {
     /* Handles responsivity without the need for a media query */
     display: flex;
@@ -269,12 +269,14 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  text-decoration: none;
 }
 
-dt {
+dt a {
     font-size: 1.2em; 
     margin:20px;
     padding-left: 10px;
+    color:teal;
 }
 
  dd{
@@ -283,17 +285,16 @@ dt {
 }
 
 /* Link Page- List style hover */
-dl dt,
-dl dt {
+dl dt a,
+dl dt a{
+    text-decoration: none;
     color:teal; 
-    text-decoration:none !important; /* this should take away the underline, but it isnt't?*/
     transition: color 0.3s; 
 }
 
- dl dt:hover,
- dl dt:hover {
+ dl dt a:hover,
+ dl dt a:hover {
     color:rgb(255,105,180);
-    text-shadow: 2px 2px rgb(0,128,128);
     
 }
 
@@ -412,19 +413,19 @@ dl dt {
     }
 
     /* Home Page - Benefits section */
-    #benefits-physical,
-    #benefits-mental {
+    #benefits-1,
+    #benefits-2 {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #benefits-physical > div,
-    #benefits-mental > div {
+    #benefits-1 > div,
+    #benefits-2 > div {
         width: 75%;
     }
 
-    #benefits-mental > div {
+    #benefits-2 > div {
         text-align: end;
         align-self: flex-end;
     }
@@ -525,15 +526,15 @@ dl dt {
             order: 0
         }
 
-        #benefits-mental {
+        #benefits-2 {
             order: 1;
         }
 
-        #benefits-mental > div {
+        #benefits-2 > div {
             align-self: flex-start;
         }
 
-        #benefits-physical > div {
+        #benefits-1 > div {
             align-self: flex-end;
         }
     }
