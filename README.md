@@ -89,3 +89,7 @@ Information regarding PCOS was compiled from the following sources:
 * Links-min.png, saduterus.png & signuppg.png - Pexels.com.
 
 * podcast-min.png - Elle Magazine article "14 Of The Best And Most Replay-Worthy Podcasts For Women By Women" August 7th, 2023.
+
+## Notes
+Please note that at the beginning of this project, I intended to build a different website. This changed after an inital review and it was established that the PCOS CYSTERS site would better fit the brief for PP1.
+
